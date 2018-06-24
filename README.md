@@ -36,7 +36,7 @@ const FETCH_USERS_CANCEL = 'FETCH_USERS_CANCEL'
 const loadUsersEpic = action$ => action$.pipe(
   ofType(FETCH_USERS),
   mergeMap(action => ajax.getJSON(`/api/users`).pipe(
-    map(users => ({ users }))
+    map(users => ({ status: 'SUCCESS', users }))
     takeUntil(action$.pipe(
       ofType(FETCH_USERS_CANCEL)
     ))
