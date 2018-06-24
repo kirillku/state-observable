@@ -1,0 +1,9 @@
+{
+  "name": "state-observable",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "description": "State management with rxjs",
+  "author": "Kirill Kubryakov",
+  "license": "MIT",
+  "private": false
+}
